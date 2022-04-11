@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:git_intro/constants/r.dart';
 import 'package:git_intro/view/login_page.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -16,12 +17,12 @@ class SplashScreen extends StatelessWidget {
         },
         child: Center(
           child: Image.asset(
-            "assets/auth/ic_splash.png",
+            R.assets.icSplash,
             width: MediaQuery.of(context).size.width * 0.5,
           ),
         ),
       ),
-      backgroundColor: Color(0xff3A7FD5),
+      backgroundColor: R.colors.primary,
     );
   }
 }
